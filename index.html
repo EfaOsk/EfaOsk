@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
@@ -6,36 +6,51 @@
     <meta charset="UTF-8">
     <meta name="description" content="A Super Fun Website">
     <title>Efa Ósk</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="banner">
+        This site is currently under construction. Stay tuned for updates!
+    </div>
     <header>
-        <h1># Eva Ósk</h1>
-        <p><big><b>About me:</b></big> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel fringilla lacus. Morbi tempus dui lacus. Etiam viverra mollis quam, non convallis tortor tincidunt ac. Sed vitae dui vel nulla egestas tempus. Donec faucibus id urna ut maximus. Vivamus fermentum vitae elit at pellentesque. Curabitur nec aliquam elit. Proin nunc orci, imperdiet sit amet ornare id, congue et lorem. Cras luctus justo a urna porttitor dictum. Vestibulum cursus eros nec malesuada pretium. Fusce non neque euismod, facilisis dolor vitae, tincidunt magna. Pellentesque pretium nunc a lacus rutrum tempor. Nam at felis viverra, tempus nunc in, sollicitudin ex. Proin condimentum neque eu dolor semper suscipit. Maecenas consequat eros quis dui interdum, non sagittis sapien facilisis.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <h1># Portfolio</h1>
-    <div class="projectcard"> 
-        <div class="projectcard-header">
-            Something Impressive I have done
-        </div>
+    <section id="about">
+        <h1>About Me</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel fringilla lacus. Morbi tempus dui lacus. Etiam viverra mollis quam, non convallis tortor tincidunt ac. Sed vitae dui vel nulla egestas tempus. Donec faucibus id urna ut maximus. Vivamus fermentum vitae elit at pellentesque. Curabitur nec aliquam elit. Proin nunc orci, imperdiet sit amet ornare id, congue et lorem. Cras luctus justo a urna porttitor dictum. Vestibulum cursus eros nec malesuada pretium. Fusce non neque euismod, facilisis dolor vitae, tincidunt magna. Pellentesque pretium nunc a lacus rutrum tempor. Nam at felis viverra, tempus nunc in, sollicitudin ex. Proin condimentum neque eu dolor semper suscipit. Maecenas consequat eros quis dui interdum, non sagittis sapien facilisis.</p>
+    </section>
+
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="projectcards">
+            <div class="projectcard">
+                <h2>Something Impressive I Have Done</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel fringilla lacus. Morbi tempus dui lacus. Etiam viverra mollis quam, non convallis tortor tincidunt ac. Sed vitae dui vel nulla egestas tempus. Donec faucibus id urna ut maximus. Vivamus fermentum vitae elit at pellentesque. Curabitur nec aliquam elit. Proin nunc orci, imperdiet sit amet ornare id, congue et lorem. Cras luctus justo a urna porttitor dictum. Vestibulum cursus eros nec malesuada pretium. Fusce non neque euismod, facilisis dolor vitae, tincidunt magna. Pellentesque pretium nunc a lacus rutrum tempor. Nam at felis viverra, tempus nunc in, sollicitudin ex. Proin condimentum neque eu dolor semper suscipit. Maecenas consequat eros quis dui interdum, non sagittis sapien facilisis.</p>
+            </div>
+            <div class="projectcard">
+                <h2>Something Else Cool</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel fringilla lacus. Morbi tempus dui lacus. Etiam viverra mollis quam, non convallis tortor tincidunt ac. Sed vitae dui vel nulla egestas tempus. Donec faucibus id urna ut maximus. Vivamus fermentum vitae elit at pellentesque. Curabitur nec aliquam elit. Proin nunc orci, imperdiet sit amet ornare id, congue et lorem. Cras luctus justo a urna porttitor dictum. Vestibulum cursus eros nec malesuada pretium. Fusce non neque euismod, facilisis dolor vitae, tincidunt magna. Pellentesque pretium nunc a lacus rutrum tempor. Nam at felis viverra, tempus nunc in, sollicitudin ex. Proin condimentum neque eu dolor semper suscipit. Maecenas consequat eros quis dui interdum, non sagittis sapien facilisis.</p>
     </div>
-    <div class="projectcard"> 
-        <div class="projectcard-header">
-            Something else cool
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel fringilla lacus. Morbi tempus dui lacus. Etiam viverra mollis quam, non convallis tortor tincidunt ac. Sed vitae dui vel nulla egestas tempus. Donec faucibus id urna ut maximus. Vivamus fermentum vitae elit at pellentesque. Curabitur nec aliquam elit. Proin nunc orci, imperdiet sit amet ornare id, congue et lorem. Cras luctus justo a urna porttitor dictum. Vestibulum cursus eros nec malesuada pretium. Fusce non neque euismod, facilisis dolor vitae, tincidunt magna. Pellentesque pretium nunc a lacus rutrum tempor. Nam at felis viverra, tempus nunc in, sollicitudin ex. Proin condimentum neque eu dolor semper suscipit. Maecenas consequat eros quis dui interdum, non sagittis sapien facilisis.</p>
     </div>
-    <footer>
-        <p><b>Contact:</b></p>
-        <div color="#4AF626">
-            <p><a href="https://github.com/efaosk" class="fa fa-github"> </a> username: efaosk </p>
+    <section id="contact">
+        <h1>Contact</h1>
+        <div class="contact-icon">
+            <a href="https://github.com/efaosk" class="fa fa-github"> github.com/efaosk</a> 
         </div>
-        <div color="#4AF626">
-            <p><a href="https://linkedin.com/in/efaosk" class="fa fa-linkedin"> </a> username: efaosk </p>
+        <div class="contact-icon">
+            <a href="https://linkedin.com/in/efaosk" class="fa fa-linkedin"> linkedin.com/in/efaosk </a>
         </div>
-        <div color="#4AF626">
-            <p><a href="https://Facebook.com/efaosk" class="fa fa-facebook"> </a> username: efaosk </p>
+        <div class="contact-icon">
+            <a href="mailto:eva@efaosk.is" class="fa fa-envelope"> eva (at) efaosk.is</a>
         </div>
-    </footer>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

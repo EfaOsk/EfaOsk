@@ -1,25 +1,109 @@
 body {
-    background-color: #000000;
-    margin: 5px 20px 20px;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
 h1 {
-    color: #00ab00;
+    color: #333;
 }
-p {
-    color: #4AF626;
+
+.projectcards {
+    display: flex;
+    overflow-x: auto;
 }
+
 .projectcard {
-    /* width: 0.3%; */
-    margin: 5px 20px 20px;
-    padding: 5px;
-    border: 2px solid #00ab00;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+
+    /* Add these lines */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+
+.projectcard h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.projectcard p {
+    font-size: 14px; 
+}
+
+/* .projectcard {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #333;
     border-radius: 5px;
+} */
+
+.contact-icon {
+    color: #333;
+    font-size: 20px;
+}
+
+.banner {
+    background-color: #ffcc00; 
+    color: black; 
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+#switchLanguage {
+    background-color: transparent; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
     /* position: relative; */
 }
-.projectcard-header{
-    color: #4AF626;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 1000;
-    border-bottom: 1px dashed #00ab00;
+
+#flagImage {
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+    object-fit: cover; /
 }
