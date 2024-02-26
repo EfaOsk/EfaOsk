@@ -1,84 +1,6 @@
-body {
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-section {
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    color: #333;
-}
-
-.projectcards {
-    display: flex;
-    overflow-x: auto;
-}
-
-.projectcard {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid #333;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-
-    /* Add these lines */
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-
-
-.projectcard h2 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.projectcard p {
-    font-size: 14px; 
-}
-
-/* .projectcard {
-    background-color: #fff;
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid #333;
-    border-radius: 5px;
-} */
-
-.contact-icon {
-    color: #333;
-    font-size: 20px;
+.dark-mode { /*TODO Dark and Light mode*/
+    background-color: #111;
+    color: #ddd;
 }
 
 .banner {
@@ -89,21 +11,152 @@ h1 {
     font-weight: bold;
 }
 
-#switchLanguage {
-    background-color: transparent; 
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.header {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.header a:hover, .header a:focus {
+    color: #1e90ff;
+    text-decoration: none;
+}
+.tools {
+    display: flex;
+    align-items: center;
+}
+.mode-toggle, .language-toggle {
     cursor: pointer;
-    outline: none;
-    overflow: hidden;
-    /* position: relative; */
+    margin-left: 20px;
+    font-size: 18px;
+}
+.mode-toggle {
+    font-size: 24px;
 }
 
-#flagImage {
-    width: 100%;
-    height: 100%;
-    /* display: block; */
-    object-fit: cover; /
+.about-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.about-section h2 {
+    margin-top: 0;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text {
+    max-width: 600px;
+}
+.about-image {
+    width: 150pt;
+    height: auto;
+    margin: 10px;
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20%;
+}
+.fun-facts {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #1e90ff;
+}
+.fun-fact {
+    margin: 10px 0;
+}
+
+
+@media (max-width: 600px) { /* If on smart phone */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .about-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+
+}
+
+.portfolio-container h2 {
+    text-align: center;
+  }
+  
+.portfolio-items {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #1e90ff lightgray; 
+}
+  
+.portfolio-item {
+    flex: 0 0 auto;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+.portfolio-icon {
+    font-size: 3em; 
+}
+  
+
+.portfolio-items::-webkit-scrollbar {
+    height: 10px;
+}
+  
+.portfolio-items::-webkit-scrollbar-thumb {
+    background-color:  #1e90ff;  
+    border-radius: 10px; 
+}
+  
+.portfolio-items::-webkit-scrollbar-track {
+    background-color: lightgray; /* color of the scrollbar track */
+}
+.contact-footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+  
+.contact-footer h2 {
+    text-align: center;
+    color: #fff;
+}
+  

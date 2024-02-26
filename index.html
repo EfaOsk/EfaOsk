@@ -1,56 +1,107 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="description" content="A Super Fun Website">
-    <title>Efa Ósk</title>
+    <meta name="description" content="Who is this Eva?">
+    <title>Eva Ósk</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="banner">
-        This site is currently under construction. Stay tuned for updates!
-    </div>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel fringilla lacus. Morbi tempus dui lacus. Etiam viverra mollis quam, non convallis tortor tincidunt ac. Sed vitae dui vel nulla egestas tempus. Donec faucibus id urna ut maximus. Vivamus fermentum vitae elit at pellentesque. Curabitur nec aliquam elit. Proin nunc orci, imperdiet sit amet ornare id, congue et lorem. Cras luctus justo a urna porttitor dictum. Vestibulum cursus eros nec malesuada pretium. Fusce non neque euismod, facilisis dolor vitae, tincidunt magna. Pellentesque pretium nunc a lacus rutrum tempor. Nam at felis viverra, tempus nunc in, sollicitudin ex. Proin condimentum neque eu dolor semper suscipit. Maecenas consequat eros quis dui interdum, non sagittis sapien facilisis.</p>
-    </section>
 
-    <section id="portfolio">
-        <h1>Portfolio</h1>
-        <div class="projectcards">
-            <div class="projectcard">
-                <h2>Something Impressive I Have Done</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel fringilla lacus. Morbi tempus dui lacus. Etiam viverra mollis quam, non convallis tortor tincidunt ac. Sed vitae dui vel nulla egestas tempus. Donec faucibus id urna ut maximus. Vivamus fermentum vitae elit at pellentesque. Curabitur nec aliquam elit. Proin nunc orci, imperdiet sit amet ornare id, congue et lorem. Cras luctus justo a urna porttitor dictum. Vestibulum cursus eros nec malesuada pretium. Fusce non neque euismod, facilisis dolor vitae, tincidunt magna. Pellentesque pretium nunc a lacus rutrum tempor. Nam at felis viverra, tempus nunc in, sollicitudin ex. Proin condimentum neque eu dolor semper suscipit. Maecenas consequat eros quis dui interdum, non sagittis sapien facilisis.</p>
-            </div>
-            <div class="projectcard">
-                <h2>Something Else Cool</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel fringilla lacus. Morbi tempus dui lacus. Etiam viverra mollis quam, non convallis tortor tincidunt ac. Sed vitae dui vel nulla egestas tempus. Donec faucibus id urna ut maximus. Vivamus fermentum vitae elit at pellentesque. Curabitur nec aliquam elit. Proin nunc orci, imperdiet sit amet ornare id, congue et lorem. Cras luctus justo a urna porttitor dictum. Vestibulum cursus eros nec malesuada pretium. Fusce non neque euismod, facilisis dolor vitae, tincidunt magna. Pellentesque pretium nunc a lacus rutrum tempor. Nam at felis viverra, tempus nunc in, sollicitudin ex. Proin condimentum neque eu dolor semper suscipit. Maecenas consequat eros quis dui interdum, non sagittis sapien facilisis.</p>
+<div class="banner">
+    This site is currently under construction. Stay tuned for updates!
+</div>
+<div class="header">
+  <div>
+    <h1>Eva Ósk</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div>
+    <span class="language-toggle">EN</span>
+    <span class="mode-toggle">🌓</span>
+  </div>
+</div>
+
+
+<!-- About Me Section -->
+<div class="about-section" id="about">
+    <h1>About me!</h1>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="images/12.jpeg" alt="AI image of Eva">
+      </div>
+      <div class="about-text">
+        <p>Hey-Ó! I'm <b>Eva Ósk</b>, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel fringilla lacus. Morbi tempus dui lacus. Which I think is pretty cool and Etiam viverra mollis quam, non convallis tortor tincidunt ac. </p>
+        <div class="fun-facts">
+          <h3>Fun facts:</h3>
+          <p class="fun-fact">- The image is both of me and AI generated.</p>
+          <p class="fun-fact">- I can solve a Rubik's cube in under 2 minutes.</p>
+          <p class="fun-fact">- More fun facts.</p>
+        </div>
+      </div>
     </div>
+</div>
+
+<!-- Portfolio Section -->
+<div class="portfolio-container" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-items">
+      <!-- Portfolio Item 0 -->
+      <div class="portfolio-item" onclick="openPage('http://hdl.handle.net/1946/46266')">
+        <h3>The EM-BDD Algorithm</h3>
+        <p>Baum-Welch algorithm, Forward-Backward procedure, </p>
+        <p> Binary Decision Diagrams, Hidden Markov Models &</p>
+        <p> Expectation-Maximization algorithm</p>
+        <div class="portfolio-icon">🖼️</div>
+      </div>
+      <!-- Portfolio Item 1 -->
+      <div class="portfolio-item" onclick="openPage('page-url1')">
+        <h3>The Battel of Training a Battel Snake</h3>
+        <p>Deep Reinforcement Neural Network.</p>
+        <div class="portfolio-icon">🐊</div>
+      </div>
+      <!-- Portfolio Item 2 -->
+      <div class="portfolio-item" onclick="openPage('page-url2')">
+        <h3>Sudoku Solver</h3>
+        <p>Backtracking, Randomization, Heuristics & Recursion. </p>
+        <div class="portfolio-icon">🧩</div>
+      </div>
+      <!-- Portfolio Item 3 -->
+      <div class="portfolio-item" onclick="openPage('page-url3')">
+        <h3>Brainf**k compiler</h3>
+        <p>Lexing, Parsing, Code Generation & Assembly</p>
+        <div class="portfolio-icon">🤯</div>
+      </div>
+      <!-- Portfolio Item 4 -->
+      <div class="portfolio-item" onclick="openPage('page-url4')">
+        <h3>cool title</h3>
+        <p>key words</p>
+        <div class="portfolio-icon">🖼️</div>
+      </div>
+
+      <!-- More portfolio items -->
     </div>
-    <section id="contact">
-        <h1>Contact</h1>
-        <div class="contact-icon">
-            <a href="https://github.com/efaosk" class="fa fa-github"> github.com/efaosk</a> 
-        </div>
-        <div class="contact-icon">
-            <a href="https://linkedin.com/in/efaosk" class="fa fa-linkedin"> linkedin.com/in/efaosk </a>
-        </div>
-        <div class="contact-icon">
-            <a href="mailto:eva@efaosk.is" class="fa fa-envelope"> eva (at) efaosk.is</a>
-        </div>
-    </section>
-    <script src="script.js"></script>
+  </div>
+
+  <!-- Footer/ Contact Section -->
+  <footer class="contact-footer">
+    <div class="contact-info" id="contact">
+      <h2>Contact</h2>
+      <p> <a href="mailto:eva@evaosk.is" class="fa fa-envelope"></a> eva@evaosk.is</p>
+      <p> <a href="http://evaosk.is" class="fa fa-globe"></a> evaosk.is</p>
+      <p> <a href="https://github.com/efaosk" class="fa fa-github"></a> github.com/efaosk</p>
+      <p> <a href="https://linkedin.com/in/efaosk", class="fa fa-linkedin"></a> linkedin.com/in/efaosk </p>
+    </div>
+  </footer>
+  
+  
+  <script src="script.js"></script>
 </body>
 </html>
