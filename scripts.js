@@ -9,6 +9,6 @@ document.querySelector('.language-toggle').addEventListener('click', function() 
 
 
 function openPage(url) {
-    // TODO
+    window.open(url, '_blank').focus();
 }
   
