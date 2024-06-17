@@ -38,7 +38,7 @@ body {
     transition: color 0.3s ease;
 }
 .header a:hover, .header a:focus {
-    color: #1e90ff;
+    color: #ffc0cb;
     text-decoration: none;
 }
 .tools {
@@ -86,7 +86,7 @@ body {
     margin-top: 20px;
     padding: 10px;
     background-color: #f9f9f9;
-    border-left: 5px solid #1e90ff;
+    border-left: 5px solid #ff69b4;
 }
 .fun-fact {
     margin: 10px 0;
@@ -119,7 +119,7 @@ body {
     display: flex;
     overflow-x: auto;
     scrollbar-width: thin;
-    scrollbar-color: #1e90ff lightgray; 
+    scrollbar-color: #ff69b4 lightgray; 
 }
   
 .portfolio-item {
@@ -131,8 +131,12 @@ body {
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
-  }
-  
+}
+.portfolio-item:hover {
+    border: 1px solid #ff69b4;
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+}  
 .portfolio-icon {
     font-size: 3em; 
 }
@@ -143,7 +147,7 @@ body {
 }
   
 .portfolio-items::-webkit-scrollbar-thumb {
-    background-color:  #1e90ff;  
+    background-color:  #ffc0cb;;  
     border-radius: 10px; 
 }
   
